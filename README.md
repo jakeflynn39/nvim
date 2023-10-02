@@ -1,2 +1,2 @@
 # Neovim Config File
-### Clone into `~/.config`
+Clone into `~/.config`
