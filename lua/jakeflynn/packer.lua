@@ -7,17 +7,19 @@ return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
 
+  -- Telescope
   use {
 	  'nvim-telescope/telescope.nvim', tag = '0.1.0',
 	  -- or                            , branch = '0.1.x',
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
 
+  -- theme 
   use({
-	  'rose-pine/neovim',
-	  as = 'rose-pine',
+	  'sainnhe/everforest',
+	  as = 'everforest',
 	  config = function()
-		  vim.cmd('colorscheme rose-pine')
+		  vim.cmd('colorscheme everforest')
 	  end
   })
 
@@ -26,6 +28,8 @@ return require('packer').startup(function(use)
   use('theprimeagen/harpoon')
   use('mbbill/undotree')
   use('tpope/vim-fugitive')
+  use('sbdchd/neoformat')
+  use('github/copilot.vim')
 
   use {
 	  'VonHeikemen/lsp-zero.nvim',
